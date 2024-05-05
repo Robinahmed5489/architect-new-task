@@ -162,6 +162,50 @@ nav .navbar ul li a {
   font-size: 24px;
   margin: 0;
 }
+/* facts starts  */
+.facts {
+  margin-top: 70px;
+}
+.facts .facts-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-top: 30px;
+}
+.facts .facts-box .boxes {
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #ff900e;
+  border-radius: 2px;
+}
+.facts .facts-box .boxes img {
+  margin: auto;
+}
+.facts .facts-box .boxes h4,
+.facts .facts-box .boxes p {
+  margin: 10px;
+  color: #585858;
+}
+.facts .facts-box .boxes h4 {
+  font-size: larger;
+}
+/* sponsor start  */
+.sponsors {
+  margin: 60px 0;
+  text-align: center;
+}
+.sponsors .sponsor-logo {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+.sponsors .sponsor-logo .images {
+  width: 70%;
+}
+.sponsors .sponsor-logo .images img {
+  width: 100%;
+}
 
 @media screen and (max-width: 992px) {
   .container {
@@ -185,6 +229,11 @@ nav .navbar ul li a {
     left: 18px;
   }
 }
+@media screen and (max-width: 800px) {
+  .facts .facts-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 @media screen and (max-width: 640px) {
   nav {
@@ -203,5 +252,8 @@ nav .navbar ul li a {
   }
   .quicklist .container {
     text-align: center;
+  }
+  .sponsors .sponsor-logo {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
