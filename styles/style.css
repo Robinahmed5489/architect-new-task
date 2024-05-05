@@ -1,4 +1,39 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+header {
+  display: block;
+  overflow: hidden;
+  background-color: #fff4e7;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav .company-name h3 {
+  font-size: 30px;
+}
+nav .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .navbar ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+nav .navbar ul li {
+  list-style: none;
+}
+nav .navbar ul li a {
+  text-decoration: none;
+  color: #777674;
+  font-size: smaller;
 }
