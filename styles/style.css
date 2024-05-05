@@ -104,13 +104,65 @@ nav .navbar ul li a {
 
 /* feature style start  */
 
+.features {
+  margin-top: 50px;
+}
+.features .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+}
+.features .features-info {
+  width: 60%;
+}
+.features .feature-image img {
+  width: 100%;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 30px;
+}
+.features h3 {
+  border-left: 4px solid #ff900e;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.features h4 {
+  color: #131313;
+}
+.features p {
+  margin-bottom: 40px;
+}
+.features .features-info .card {
+  margin: 20px 0;
+  padding: 20px;
+  box-shadow: 4px 4px 20px rgb(218, 218, 218);
+}
+.features .temporary {
+  position: relative;
+  background-color: #ff900e;
+  border-radius: 5px;
+  top: -120px;
+  right: 300px;
+}
+
 @media screen and (max-width: 992px) {
   .container {
-    max-width: 99%;
-    margin: auto;
+    max-width: 98%;
+    margin: 0 auto;
   }
   .quicklist .list-description {
     padding-left: 10px;
+  }
+  .features .container {
+    flex-direction: column;
+  }
+  .features .features-info {
+    width: 90%;
+  }
+  .features .feature-image {
+    width: 90%;
   }
 }
 
