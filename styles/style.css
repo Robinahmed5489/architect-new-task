@@ -139,12 +139,28 @@ nav .navbar ul li a {
   padding: 20px;
   box-shadow: 4px 4px 20px rgb(218, 218, 218);
 }
-.features .temporary {
+.features .feature-image {
   position: relative;
+}
+.features .temporary {
+  position: absolute;
   background-color: #ff900e;
   border-radius: 5px;
-  top: -120px;
-  right: 300px;
+  bottom: -15px;
+  left: 18px;
+  color: white;
+  text-align: center;
+  padding: 10px 50px;
+  height: 100px;
+  width: 150px;
+}
+.features .temporary h1 {
+  font-size: 40px;
+  margin: 0;
+}
+.features .temporary p {
+  font-size: 24px;
+  margin: 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -163,6 +179,10 @@ nav .navbar ul li a {
   }
   .features .feature-image {
     width: 90%;
+  }
+  .features .temporary {
+    bottom: -15px;
+    left: 18px;
   }
 }
 
